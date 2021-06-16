@@ -1,0 +1,79 @@
+{
+	"name": "react-network-status",
+	"version": "1.0.2",
+	"description": "Network status and polling for React Framework",
+	"main": "dist/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tofiqquadri/react-network-status.git"
+	},
+	"files": [
+		"dist"
+	],
+	"authors": [
+		"Tofiq Quadri"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "17.0.0",
+		"@types/react-dom": "17.0.0",
+		"@typescript-eslint/eslint-plugin": "^4.5.0",
+		"@typescript-eslint/parser": "^4.5.0",
+		"babel-core": "^6.26.3",
+		"babel-runtime": "^6.26.0",
+		"eslint-config-airbnb": "18.2.0",
+		"eslint-config-airbnb-typescript": "^12.0.0",
+		"eslint-config-prettier": "^6.13.0",
+		"eslint-plugin-import": "^2.21.2",
+		"eslint-plugin-jest": "^24.1.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.0",
+		"eslint-plugin-react-hooks": "4.0.0",
+		"eslint-plugin-security": "^1.4.0",
+		"prettier": "^2.1.2",
+		"rollup": "^2.36.1",
+		"rollup-plugin-typescript2": "^0.29.0",
+		"typescript": "^4.1.3"
+	},
+	"peerDependencies": {
+		"react": "17.0.0",
+		"react-dom": "17.0.0"
+	},
+	"bugs": {
+		"url": "https://github.com/tofiqquadri/react-network-status/issues"
+	},
+	"homepage": "https://github.com/tofiqquadri/react-network-status#readme",
+	"scripts": {
+		"build": "rollup -c",
+		"build-watch": "rollup -c -w",
+		"test": "jest spec",
+		"test-watch": "jest spec --watch",
+		"lint": "eslint src/ demo/src",
+		"prettier": "prettier src/** demo/src/** --write",
+		"test.cover": "jest spec --coverage"
+	},
+	"keywords": [
+		"react-network",
+		"react-online-offline-detect",
+		"react-network-status",
+		"react",
+		"next",
+		"check status",
+		"react network status"
+	],
+	"jest": {
+		"collectCoverageFrom": [
+			"src/**/*.js",
+			"!<rootDir>/node_modules/",
+			"!<rootDir>/demo/"
+		],
+		"coverageThreshold": {
+			"global": {
+				"branches": 100,
+				"functions": 100,
+				"lines": 100,
+				"statements": 100
+			}
+		}
+	}
+}
